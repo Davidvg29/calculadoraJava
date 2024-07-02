@@ -4,6 +4,7 @@
  */
 package igu;
 import java.awt.*;
+import javax.swing.ImageIcon;
 /**
  *
  * @author user
@@ -17,6 +18,7 @@ public class Pantalla extends javax.swing.JFrame {
         initComponents();
         Image icono = Toolkit.getDefaultToolkit().getImage("src/iconoCalculadora.png");
         this.setIconImage(icono);
+        setIconImage(new ImageIcon(getClass().getResource("/iconoCalculadora.png")).getImage());
     }
     
     String operacion="";
