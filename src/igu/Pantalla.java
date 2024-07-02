@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package igu;
-
+import java.awt.*;
 /**
  *
  * @author user
@@ -15,7 +15,8 @@ public class Pantalla extends javax.swing.JFrame {
      */
     public Pantalla() {
         initComponents();
-        
+        Image icono = Toolkit.getDefaultToolkit().getImage("src/iconoCalculadora.png");
+        this.setIconImage(icono);
     }
     
     String operacion="";
